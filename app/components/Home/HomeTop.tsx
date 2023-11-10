@@ -5,6 +5,7 @@ import homeLogo from "../../../public/home-main.svg";
 import Image from "next/image";
 import Particle from "../Particle";
 import TypeWriter from "./TypeWriter";
+import HomeBottom from "./HomeBottom";
 //import Home2 from "./Home2";
 //import Type from "./Type";
 
@@ -36,7 +37,7 @@ function HomeTop() {
           </Row>
         </Container>
       </Container>
-      {/* <Home2 /> */}
+      <HomeBottom />
     </section>
   );
 }
