@@ -1,5 +1,6 @@
 'use client'
 import "bootstrap/dist/css/bootstrap.min.css";
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import HomeTop from './components/Home/HomeTop'
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";

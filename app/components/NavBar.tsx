@@ -1,5 +1,9 @@
 'use client'
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faFileAlt, faStar } from '@fortawesome/free-regular-svg-icons';
+import { faHouseChimneyUser, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
+import { faCodepen } from '@fortawesome/free-brands-svg-icons'
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -52,7 +56,7 @@ function NavBar() {
                     <Nav className="ml-auto" defaultActiveKey="#home">
                         <Nav.Item>
                             <Nav.Link as={Link} href="/" onClick={() => updateExpanded(false)}>
-                                <i className="fas fa-home"></i> Home
+                                <FontAwesomeIcon icon={faHouseChimneyUser} /> Home
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -61,7 +65,7 @@ function NavBar() {
                                 href="/about"
                                 onClick={() => updateExpanded(false)}
                             >
-                                <i className="far fa-user"></i> About
+                                <FontAwesomeIcon icon={faUser} /> About
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -70,7 +74,7 @@ function NavBar() {
                                 href="/project"
                                 onClick={() => updateExpanded(false)}
                             >
-                                <i className="fab fa-codepen"></i> Projects
+                               <FontAwesomeIcon icon={faCodepen} /> Projects
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -79,18 +83,18 @@ function NavBar() {
                                 href="/resume"
                                 onClick={() => updateExpanded(false)}
                             >
-                                <i className="far fa-file-alt"></i> Resume
+                                <FontAwesomeIcon icon={faFileAlt} /> Resume
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item className="fork-btn">
                             <Button
-                                href="https://gitlab.com/LouaiAloui"
+                                href="https://github.com/alouilouai"
                                 target="_blank"
                                 className="fork-btn-inner"
                             >
-                                <i className="fas fa-code-branch"></i>{" "}
-                                <i className="far fa-star"></i>
+                                <FontAwesomeIcon icon={faCodeBranch} />{" "}
+                                <FontAwesomeIcon icon={faStar} />
                             </Button>
                         </Nav.Item>
                     </Nav>

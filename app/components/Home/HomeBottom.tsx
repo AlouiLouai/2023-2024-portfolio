@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../../public/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faGithub, faGitlab, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function HomeBottom
 () {
@@ -65,7 +67,7 @@ function HomeBottom
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-github"></i>
+                  <i className="fab fa-github"></i><FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
               <li className="social-icons">
@@ -75,7 +77,7 @@ function HomeBottom
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-facebook"></i>
+                  <i className="fab fa-facebook"></i><FontAwesomeIcon icon={faFacebook} />
                 </a>
               </li>
               <li className="social-icons">
@@ -85,7 +87,7 @@ function HomeBottom
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i><FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
               <li className="social-icons">
@@ -95,7 +97,7 @@ function HomeBottom
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <i className="fab fa-gitlab"></i>
+                  <i className="fab fa-gitlab"></i><FontAwesomeIcon icon={faGitlab} />
                 </a>
               </li>
             </ul>
