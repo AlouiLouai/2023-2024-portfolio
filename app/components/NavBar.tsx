@@ -10,6 +10,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
 
+
 function NavBar() {
     const [expand, updateExpanded] = useState(false);
     const [navColour, updateNavbar] = useState(false);
@@ -55,36 +56,33 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto" defaultActiveKey="#home">
                         <Nav.Item>
-                            <Nav.Link as={Link} href="/" onClick={() => updateExpanded(false)}>
+                            <Link href="/" onClick={() => updateExpanded(false)}>
                                 <FontAwesomeIcon icon={faHouseChimneyUser} /> Home
-                            </Nav.Link>
+                            </Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link
-                                as={Link}
-                                href="/about"
+                            <Link
+                                href="/About"
                                 onClick={() => updateExpanded(false)}
                             >
                                 <FontAwesomeIcon icon={faUser} /> About
-                            </Nav.Link>
+                            </Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link
-                                as={Link}
+                            <Link
                                 href="/project"
                                 onClick={() => updateExpanded(false)}
                             >
                                <FontAwesomeIcon icon={faCodepen} /> Projects
-                            </Nav.Link>
+                            </Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link
-                                as={Link}
+                            <Link
                                 href="/resume"
                                 onClick={() => updateExpanded(false)}
                             >
                                 <FontAwesomeIcon icon={faFileAlt} /> Resume
-                            </Nav.Link>
+                            </Link>
                         </Nav.Item>
 
                         <Nav.Item className="fork-btn">
