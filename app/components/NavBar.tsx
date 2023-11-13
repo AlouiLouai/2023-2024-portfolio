@@ -56,33 +56,33 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto" defaultActiveKey="#home">
                         <Nav.Item>
-                            <Link href="/" onClick={() => updateExpanded(false)}>
+                            <Nav.Link href="/" onClick={() => updateExpanded(false)}>
                                 <FontAwesomeIcon icon={faHouseChimneyUser} /> Home
-                            </Link>
+                            </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link
+                            <Nav.Link
                                 href="/About"
                                 onClick={() => updateExpanded(false)}
                             >
                                 <FontAwesomeIcon icon={faUser} /> About
-                            </Link>
+                            </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link
+                            <Nav.Link
                                 href="/project"
                                 onClick={() => updateExpanded(false)}
                             >
                                <FontAwesomeIcon icon={faCodepen} /> Projects
-                            </Link>
+                            </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link
+                            <Nav.Link
                                 href="/resume"
                                 onClick={() => updateExpanded(false)}
                             >
                                 <FontAwesomeIcon icon={faFileAlt} /> Resume
-                            </Link>
+                            </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item className="fork-btn">
