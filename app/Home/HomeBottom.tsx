@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../../public/avatar.svg";
+import myImg from "../../public/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

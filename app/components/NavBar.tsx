@@ -8,7 +8,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import Link from "next/link";
 
 
 function NavBar() {
@@ -73,7 +72,7 @@ function NavBar() {
                                 href="/project"
                                 onClick={() => updateExpanded(false)}
                             >
-                               <FontAwesomeIcon icon={faCodepen} /> Projects
+                                <FontAwesomeIcon icon={faCodepen} /> Projects
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>

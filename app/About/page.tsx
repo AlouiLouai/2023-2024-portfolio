@@ -1,9 +1,10 @@
+'use client'
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../components/Particle";
-import Techstack from "../components/About/TechStack";
-import Aboutcard from "../components/About/AboutCard";
-import laptopImg from "../../../public/about.png";
+import Techstack from "./TechStack";
+import Aboutcard from "./AboutCard";
+import laptopImg from "../../public/about.png";
 import Image from "next/image";
 
 function About() {

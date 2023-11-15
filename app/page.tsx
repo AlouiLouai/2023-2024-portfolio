@@ -1,7 +1,7 @@
 'use client'
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import HomeTop from './components/Home/HomeTop'
+import HomeTop from './Home/page'
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
