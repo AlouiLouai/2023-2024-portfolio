@@ -8,7 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import Link from "next/link";
+
 
 function NavBar() {
     const [expand, updateExpanded] = useState(false);
@@ -55,14 +55,13 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto" defaultActiveKey="#home">
                         <Nav.Item>
-                            <Nav.Link as={Link} href="/" onClick={() => updateExpanded(false)}>
+                            <Nav.Link href="/" onClick={() => updateExpanded(false)}>
                                 <FontAwesomeIcon icon={faHouseChimneyUser} /> Home
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link
-                                as={Link}
-                                href="/about"
+                                href="/About"
                                 onClick={() => updateExpanded(false)}
                             >
                                 <FontAwesomeIcon icon={faUser} /> About
@@ -70,16 +69,14 @@ function NavBar() {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link
-                                as={Link}
                                 href="/project"
                                 onClick={() => updateExpanded(false)}
                             >
-                               <FontAwesomeIcon icon={faCodepen} /> Projects
+                                <FontAwesomeIcon icon={faCodepen} /> Projects
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link
-                                as={Link}
                                 href="/resume"
                                 onClick={() => updateExpanded(false)}
                             >

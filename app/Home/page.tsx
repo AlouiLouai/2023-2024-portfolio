@@ -1,9 +1,9 @@
 'use client'
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../../public/home-main.svg";
+import homeLogo from "../../public/home-main.svg";
 import Image from "next/image";
-import Particle from "../Particle";
+import Particle from "../components/Particle";
 import TypeWriter from "./TypeWriter";
 import HomeBottom from "./HomeBottom";
 
