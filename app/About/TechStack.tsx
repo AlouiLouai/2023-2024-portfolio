@@ -1,14 +1,18 @@
-import React from "react";
-import { Col } from "react-bootstrap";
+import React from 'react';
+import { Col } from 'react-bootstrap';
 
-function Techstack(prop: any) {
-    return (
-        <div>
-            <Col xs={4} md={2} className="tech-icons">
-                <i className={`${prop.iconName} tech-icon-images`}></i>
-            </Col>
-        </div>
-    );
+interface TechstackProps {
+  iconName: string;
 }
+
+const Techstack: React.FC<TechstackProps> = ({ iconName }) => {
+  const iconClass = `${iconName} tech-icon-images`;
+
+  return (
+    <Col xs={4} md={2} className="tech-icons">
+      <i className={iconClass}></i>
+    </Col>
+  );
+};
 
 export default Techstack;

@@ -41,30 +41,30 @@ function About() {
           </h1>
           <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
             <Techstack iconName="devicon-javascript-plain" />
-            <Techstack iconName="devicon-typescript-plain " />
-            <Techstack iconName="devicon-nodejs-plain-wordmark " />
+            <Techstack iconName="devicon-typescript-plain" />
+            <Techstack iconName="devicon-nodejs-plain-wordmark" />
             <Techstack iconName="devicon-express-original-wordmark" />
+            <Techstack iconName="devicon-nestjs-plain" />
             <Techstack iconName="devicon-react-original-wordmark" />
             <Techstack iconName="devicon-gatsby-plain-wordmark" />
             <Techstack iconName="devicon-nextjs-original-wordmark" />
-            <Techstack iconName="devicon-csharp-plain" />
-            <Techstack iconName="devicon-mongodb-plain-wordmark" />
             <Techstack iconName="devicon-graphql-plain-wordmark" />
             <Techstack iconName="devicon-bootstrap-plain-wordmark" />
             <Techstack iconName="devicon-css3-plain-wordmark" />
-            <Techstack iconName="devicon-java-plain-wordmark" />
             <Techstack iconName="devicon-html5-plain-wordmark" />
-
+            <Techstack iconName="devicon-postgresql-plain" />
+            <Techstack iconName="devicon-mongodb-plain" />
           </Row>
           <h1 className="project-heading">
             <strong className="purple">Tools</strong> I use
           </h1>
           <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-            <Techstack iconName="cib-visual-studio-code" />
-            <Techstack iconName="cib-postman" />
+            <Techstack iconName="devicon-visualstudio-plain" />
+            <Techstack iconName="devicon-kubernetes-plain" />
             <Techstack iconName="devicon-docker-plain-wordmark" />
             <Techstack iconName="devicon-git-plain-wordmark" />
-            <Techstack iconName="cib-heroku" />
+            <Techstack iconName="devicon-heroku-original" />
+            <Techstack iconName="devicon-apachekafka-original" />
           </Row>
         </Container>
       </Container>
