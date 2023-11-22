@@ -40,7 +40,7 @@ function About() {
             Professional <strong className="purple">Skillset </strong>
           </h1>
           <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-            <Techstack iconName="devicon-javascript-plain " />
+            <Techstack iconName="devicon-javascript-plain" />
             <Techstack iconName="devicon-typescript-plain " />
             <Techstack iconName="devicon-nodejs-plain-wordmark " />
             <Techstack iconName="devicon-express-original-wordmark" />
