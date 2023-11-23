@@ -1,6 +1,5 @@
 import { faHandPointRight } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import Card from "react-bootstrap/Card";
 
 function AboutCard() {

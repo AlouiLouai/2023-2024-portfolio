@@ -1,5 +1,4 @@
-'use client'
-import React from "react";
+'use client';
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../components/Particle";
 import Techstack from "./TechStack";

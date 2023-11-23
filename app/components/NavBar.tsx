@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faFileAlt, faStar } from '@fortawesome/free-regular-svg-icons';
 import { faHouseChimneyUser, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
@@ -77,7 +77,7 @@ function NavBar() {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link
-                                href="/resume"
+                                href="/Resume"
                                 onClick={() => updateExpanded(false)}
                             >
                                 <FontAwesomeIcon icon={faFileAlt} /> Resume
@@ -86,7 +86,7 @@ function NavBar() {
 
                         <Nav.Item className="fork-btn">
                             <Button
-                                href="https://github.com/alouilouai"
+                                href="https://github.com/AlouiLouai/2023-2024-portfolio"
                                 target="_blank"
                                 className="fork-btn-inner"
                             >

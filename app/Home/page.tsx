@@ -1,5 +1,4 @@
-'use client'
-import React from "react";
+'use client';
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../public/home-main.svg";
 import Image from "next/image";
