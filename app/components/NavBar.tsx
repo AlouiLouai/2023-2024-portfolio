@@ -69,7 +69,7 @@ function NavBar() {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link
-                                href="/project"
+                                href="/Project"
                                 onClick={() => updateExpanded(false)}
                             >
                                 <FontAwesomeIcon icon={faCodepen} /> Projects
