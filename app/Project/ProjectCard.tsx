@@ -12,9 +12,10 @@ export default function ProjectCards(props: any) {
                 <Image
                     src={props.imgPath}
                     alt="card-img"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="top center"
+                    fill
+                    style={
+                        {objectFit:"cover", objectPosition:"top center"}
+                    }
                 />
             </div>
             <Card.Body>
@@ -31,6 +32,10 @@ export default function ProjectCards(props: any) {
                 .image-wrapper {
                     position: relative;
                     height: 200px; /* Set the desired height */
+                }
+                .image-wrapper :global(img) {
+                    object-fit: cover;
+                    object-position: top center;
                 }
             `}</style>
         </Card>
