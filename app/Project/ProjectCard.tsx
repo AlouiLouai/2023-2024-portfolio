@@ -1,5 +1,4 @@
-'use client'
-import React from "react";
+'use client';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Image from 'next/image';
