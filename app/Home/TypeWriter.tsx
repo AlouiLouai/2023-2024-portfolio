@@ -8,7 +8,7 @@ function TypeWriter() {
           "Software engineer",
           "Full Stack javascript engineer",
           "MERN Stack Developer",
-          "A dreamer to be one of the best engineer in the world!",
+          "A dreamer to become one of the brightest engineer in the world!",
           "And Why not making a radical contribution to wrold technologies"
         ],
         autoStart: true,
