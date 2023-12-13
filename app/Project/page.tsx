@@ -14,12 +14,14 @@ import reactLogo from "../../public/projects/react.png";
 import csgoLogo from "../../public/projects/cs_go.jpg";
 import dockerLogo from "../../public/projects/docker.png"
 import downloadImageLogo from "../../public/projects/download_images.png";
+import TopScroll from "../components/ScrollToTop";
 
 export default function Projects() {
     return (
         <CoreLayout>
             <Container fluid className="project-section">
                 <Particle />
+                <TopScroll />
                 <Container>
                     <h1 className="project-heading">
                         My Recent <strong className="purple">Works </strong>
@@ -28,7 +30,7 @@ export default function Projects() {
                         Here are a few projects I&apos;ve worked on recently.
                     </p>
                     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-                    <Col md={4} className="project-card">
+                        <Col md={4} className="project-card">
                             <ProjectCard
                                 imgPath={expressReactGraphqlLogo}
                                 isBlog={false}

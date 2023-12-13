@@ -753,6 +753,30 @@ html {
   pointer-events: none;
 }
 
+.custom-scroll-to-top {
+  background-color: #a24dd386; /* Change the background color as needed */
+  border-radius: 50%; /* Make it circular */
+  padding: 10px; /* Adjust padding as needed */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.custom-scroll-to-top:hover {
+  background-color: #a24dd386; /* Change the hover background color as needed */
+}
+
+/* Adjust the arrow color */
+.custom-scroll-to-top svg {
+  color: #a24dd386;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
