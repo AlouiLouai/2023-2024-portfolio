@@ -6,6 +6,7 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../public/about.png";
 import Image from "next/image";
 import CoreLayout from "../Shared/core.layout";
+import Github from "./GithubCalendar";
 
 function About() {
   return (
@@ -65,6 +66,7 @@ function About() {
             <Techstack iconName="devicon-heroku-original" />
             <Techstack iconName="devicon-apachekafka-original" />
           </Row>
+          <Github />
         </Container>
       </Container>
     </CoreLayout>
