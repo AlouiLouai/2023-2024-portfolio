@@ -6,12 +6,14 @@ import ResumeCard from "./ResumeCard";
 import CoreLayout from "../Shared/core.layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import TopScroll from "../components/ScrollToTop";
 
 export default function Resume() {
     return (
         <CoreLayout>
             <Container fluid className="resume-section">
                 <Particle />
+                <TopScroll />
                 <Container>
                     <Row className="resume">
                         <Col md={6} className="resume-left">

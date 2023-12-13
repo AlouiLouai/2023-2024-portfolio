@@ -5,6 +5,7 @@ import Image from "next/image";
 import Particle from "../components/Particle";
 import TypeWriter from "./TypeWriter";
 import HomeBottom from "./HomeBottom";
+import TopScroll from "../components/ScrollToTop";
 
 function HomeTop() {
   return (
@@ -12,6 +13,7 @@ function HomeTop() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
+        <TopScroll />
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">

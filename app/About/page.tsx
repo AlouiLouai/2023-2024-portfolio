@@ -7,8 +7,7 @@ import laptopImg from "../../public/about.png";
 import Image from "next/image";
 import CoreLayout from "../Shared/core.layout";
 import Github from "./GithubCalendar";
-import ScrollToTop from "react-scroll-to-top"
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import TopScroll from "../components/ScrollToTop";
 
 function About() {
   return (
@@ -16,11 +15,7 @@ function About() {
       <Container fluid className="about-section">
         <Particle />
         <Container>
-          <ScrollToTop
-            smooth
-            className="custom-scroll-to-top"
-            component={faArrowUp}
-          />
+          <TopScroll />
           <Row style={{ justifyContent: "center", padding: "10px" }}>
             <Col
               md={7}
