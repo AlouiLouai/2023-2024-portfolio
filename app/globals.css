@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 body {
+  height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,6 +24,11 @@ html {
   );
 
   --imp-text-color: #c770f0;
+
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .purple {
@@ -451,6 +459,7 @@ html {
 /* --------- */
 .project-section {
   position: relative !important;
+  min-height: 100vh;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
@@ -465,17 +474,20 @@ html {
 }
 
 .project-card-view {
+  position: relative;
+  border-radius: 10px;
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
   height: 100% !important;
 }
 .project-card-view:hover {
-  transform: scale(1.02) !important;
+  transform: scale(1.05) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 15px rgba(129, 72, 144, 0.561) !important;
 }
 
 .blog-card {
@@ -602,6 +614,13 @@ html {
     padding-top: 0 !important;
   }
 }
+
+@media (max-width: 768px) {
+  .project-card {
+      margin-bottom: 2rem;
+  }
+}
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -745,7 +764,14 @@ html {
 }
 
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  min-height: 100vh;
+}
+
+.App > main {
+  flex: 1; /* Allow the main content to expand and push the footer down */
 }
 
 .App-logo {
