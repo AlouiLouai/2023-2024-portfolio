@@ -43,6 +43,7 @@ export default function ChooseCards({
         fullscreen
         animation={false}
         backdrop="static" // Prevent closing when clicking outside, but handle onHide manually
+        className="custom-modal" // Add custom class to modal
       >
         <Modal.Body>
           <iframe
@@ -58,6 +59,11 @@ export default function ChooseCards({
       </Modal>
 
       <style jsx>{`
+        /* Custom Modal Border */
+        .custom-modal .modal-content {
+          border: 2px solid #a588c0 !important; /* Change the border color here */
+        }
+
         .image-wrapper {
           position: relative;
           height: 120px;
@@ -66,10 +72,12 @@ export default function ChooseCards({
           align-items: center;
           background-color: #f8f9fa;
         }
+
         .flag-icon {
           width: 60px;
           height: auto;
         }
+
         .pdf-preview {
           width: 100%;
           height: 500px;
