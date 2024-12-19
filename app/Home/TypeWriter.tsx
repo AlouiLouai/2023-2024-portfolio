@@ -7,7 +7,7 @@ function TypeWriter() {
         strings: [
           "Software engineer",
           "Full Stack javascript engineer",
-          "MERN Stack Developer",
+          "python developer",
           "A dreamer to become one of the brightest engineer in the world!",
           "And Why not making a radical contribution to wrold technologies"
         ],

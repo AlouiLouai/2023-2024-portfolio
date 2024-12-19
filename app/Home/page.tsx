@@ -1,6 +1,5 @@
 'use client';
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../public/home-main.svg";
 import Image from "next/image";
 import Particle from "../components/Particle";
 import TypeWriter from "./TypeWriter";
@@ -22,7 +21,7 @@ function HomeTop() {
 
               <h1 className="heading-name">
                 I&apos;m
-                <strong className="main-name"> LOUAI ALOUI</strong>
+                <strong className="main-name">LOUAI ALOUI</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -31,7 +30,7 @@ function HomeTop() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <Image src={homeLogo} alt="home pic" className="img-fluid" />
+              <Image src={'/home-main.svg'} width={500} height={900}  alt="home pic" className="img-fluid" />
             </Col>
           </Row>
         </Container>

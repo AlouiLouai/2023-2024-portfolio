@@ -44,6 +44,8 @@ function About() {
           <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
             <Techstack iconName="devicon-javascript-plain" />
             <Techstack iconName="devicon-typescript-plain" />
+            <Techstack iconName="devicon-python-plain" />
+            <Techstack iconName="devicon-bash-plain" />
             <Techstack iconName="devicon-nodejs-plain-wordmark" />
             <Techstack iconName="devicon-express-original-wordmark" />
             <Techstack iconName="devicon-nestjs-plain" />
@@ -62,6 +64,8 @@ function About() {
           </h1>
           <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
             <Techstack iconName="devicon-visualstudio-plain" />
+            <Techstack iconName="devicon-pycharm-plain" />
+            <Techstack iconName="devicon-amazonwebservices-plain-wordmark" />
             <Techstack iconName="devicon-kubernetes-plain" />
             <Techstack iconName="devicon-docker-plain-wordmark" />
             <Techstack iconName="devicon-git-plain-wordmark" />

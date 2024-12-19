@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Aloui Louai </span>
             from <span className="purple"> Tunisia</span>
-            <br />Junior software engineer.
+            <br />Software engineer.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

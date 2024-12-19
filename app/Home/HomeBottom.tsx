@@ -1,12 +1,19 @@
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../public/avatar.svg";
-import Tilt from "react-parallax-tilt";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faGithub, faGitlab, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faGithub,
+  faGitlab,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
-function HomeBottom
-() {
+const Tilt = dynamic(() => import("react-parallax-tilt"), { ssr: false });
+
+function HomeBottom() {
+  const myImg = "/avatar.svg";
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -16,39 +23,44 @@ function HomeBottom
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Eager to always learn and discover new technologies in order to be up to date .
+              I am a passionate{" "}
+              <span className="purple">Full-Stack JavaScript Engineer</span>{" "}
+              with expertise in building scalable web applications and services.
               <br />
-              I fell in love with programming and I have at least learn
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C# , Java and (Javascript/Typescript). </b>
-              </i>
-              <br />
-              <br />
-              My current focus is on &nbsp;
+              <br />I am highly proficient in modern JavaScript frameworks like
               <i>
                 <b className="purple">
-                  Full Stack javascript engineer
+                  {" "}
+                  React, Next.js, Gatsby, Express.js, and Nest.js.{" "}
+                </b>
+              </i>
+              I also have experience working with{" "}
+              <b className="purple">Flask</b> for backend development.
+              <br />
+              <br />
+              My skillset extends to <b className="purple">DevOps</b>, where I
+              have worked extensively with
+              <i>
+                <b className="purple">
+                  AWS EC2, S3, SES, and SQS, as well as CI/CD pipelines, Bash
+                  scripting, and monitoring tools like Loki and Grafana.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with
-              <i>
-                <b className="purple"> Modern Javascript Frameworks</b>
-              </i>
-              like
-              <i>
-                <b className="purple"> Nest.js - Next.js - Gatsby - Express.js </b>
-              </i>
+              Additionally, I gained valuable experience as a{" "}
+              <span className="purple">Quantitative Developer</span> while
+              working at a hedge fund startup, where I contributed to financial
+              solutions leveraging my programming expertise.
+              <br />
+              <br />
+              My goal is to continuously learn, adapt, and apply my skills to
+              solve challenging problems and build impactful software.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <Image src={myImg} className="img-fluid" alt="avatar" />
+              <Image src={myImg} width={300} height={300} alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -64,7 +76,7 @@ function HomeBottom
                   href="https://github.com/AlouiLouai"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
@@ -74,7 +86,7 @@ function HomeBottom
                   href="https://www.facebook.com/profile.php?id=100070654390110"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FontAwesomeIcon icon={faFacebook} />
                 </a>
@@ -84,7 +96,7 @@ function HomeBottom
                   href="https://www.linkedin.com/in/louai-aloui-521094111/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
@@ -106,4 +118,5 @@ function HomeBottom
     </Container>
   );
 }
+
 export default HomeBottom;

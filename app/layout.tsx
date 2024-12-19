@@ -5,6 +5,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import './globals.css';
 import 'devicon/devicon.min.css';
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
