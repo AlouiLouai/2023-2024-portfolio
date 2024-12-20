@@ -2,17 +2,14 @@
 import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
 import { useState } from "react";
+import { Button } from "react-bootstrap";
 
-export default function ChooseCards({
-  title,
-  description,
-  previewLink,
-}: any) {
+export default function ChooseCards({ title, description, previewLink }: any) {
   const [showPreview, setShowPreview] = useState(false);
 
-  // Open the modal when mouse enters
-  const handleMouseEnter = () => {
-    setShowPreview(true);
+  // Toggle the modal visibility
+  const handlePreviewClick = () => {
+    setShowPreview(!showPreview);
   };
 
   // Close the modal when clicked outside
@@ -22,7 +19,20 @@ export default function ChooseCards({
 
   return (
     <>
-      <Card className="project-card-view" onMouseEnter={handleMouseEnter}>
+      <Card className="project-card-view">
+        <div className="button-overlay">
+          <Button
+            variant="primary"
+            onClick={handlePreviewClick}
+            style={{
+              backgroundColor: "#a588c0",
+              borderColor: "#a588c0",
+              color: "#fff",
+            }}
+          >
+            Preview
+          </Button>
+        </div>
         <iframe
           src={previewLink}
           className="pdf-preview"
@@ -45,6 +55,21 @@ export default function ChooseCards({
         backdrop="static" // Prevent closing when clicking outside, but handle onHide manually
         className="custom-modal" // Add custom class to modal
       >
+        <Button
+          variant="secondary"
+          onClick={handleModalClose}
+          style={{
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            zIndex: 1050,
+            backgroundColor: "#a588c0",
+            borderColor: "#a588c0",
+            color: "#fff",
+          }}
+        >
+          Close
+        </Button>
         <Modal.Body>
           <iframe
             src={previewLink}
@@ -62,6 +87,23 @@ export default function ChooseCards({
         /* Custom Modal Border */
         .custom-modal .modal-content {
           border: 2px solid #a588c0 !important; /* Change the border color here */
+        }
+
+        .button-overlay {
+          position: absolute; /* Ensure overlay positioning */
+          top: 0;
+          left: 0;
+          width: 100%; /* Cover the entire card */
+          height: 100%; /* Cover the entire card */
+          display: flex; /* Use Flexbox for centering */
+          justify-content: center; /* Center horizontally */
+          align-items: center; /* Center vertically */
+          background-color: rgba(
+            0,
+            0,
+            0,
+            0.3
+          ); /* Optional: Transparent overlay background */
         }
 
         .image-wrapper {
