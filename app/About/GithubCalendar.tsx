@@ -1,31 +1,58 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
-import { Row } from "react-bootstrap";
+import { Col, Form, Row } from "react-bootstrap";
+
+const years = [2022, 2023, 2024, 2025];
 
 function Github() {
-    const colourTheme = {
-        background: ["#ecd9fc", "#8400b8"], // Lowest and highest intensity colors
-        text: "#ffffff",
-        grade4: "#8400b8",
-        grade3: "#b22ff4",
-        grade2: "#b265f6",
-        grade1: "#c084f5",
-        grade0: "#ecd9fc",
-    };
-    return (
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-                Days I <strong className="purple">Code</strong>
-            </h1>
-            <GitHubCalendar
-                username="alouilouai"
-                blockSize={15}
-                blockMargin={5}
-                // theme={colourTheme}
-                fontSize={16}
-            />
-        </Row>
-    );
+  const [selectedYear, setSelectedYear] = useState(2025);
+
+  const handleYearChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedYear(parseInt(event.target.value));
+  };
+
+  return (
+    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+      <Col xs={12} className="d-flex flex-column align-items-center mb-4">
+        <h1
+          className="project-heading text-center"
+          style={{ paddingBottom: "10px" }}
+        >
+          Days I <strong className="purple">Code</strong> during
+        </h1>
+        <Form.Group controlId="yearSelect">
+          <Form.Control
+            as="select"
+            value={selectedYear}
+            onChange={handleYearChange}
+            style={{
+              width: "120px",
+              color: "#6c63ff", // Matches the color of "I Code"
+              border: "2px solid #6c63ff",
+              backgroundColor: "#f9f9ff",
+              textAlign: "center",
+            }}
+          >
+            {years.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </Form.Control>
+        </Form.Group>
+      </Col>
+      <Col xs={12}>
+        <GitHubCalendar
+          username="alouilouai"
+          year={selectedYear}
+          blockSize={15}
+          blockMargin={5}
+          fontSize={16}
+        />
+      </Col>
+    </Row>
+  );
 }
 
 export default Github;
