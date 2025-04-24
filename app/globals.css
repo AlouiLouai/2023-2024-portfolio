@@ -1,3 +1,14 @@
+/* Add this at the top of your globals.css */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px); /* Example: slide from top */
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms; /* Adjust duration as needed */
+}
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 body {
   height: 100%;
@@ -6,6 +17,7 @@ body {
   flex-direction: column;
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
