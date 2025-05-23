@@ -9,7 +9,9 @@ function TypeWriter() {
                     "Full Stack javascript engineer",
                     "python developer",
                     "A dreamer to become one of the brightest engineer in the world!",
-                    "And Why not making a radical contribution to wrold technologies"
+                    "And Why not making a radical contribution to wrold technologies",
+                    "AI Enthusiast",
+                    "Automation Advocate"
                 ],
                 autoStart: true,
                 loop: true,

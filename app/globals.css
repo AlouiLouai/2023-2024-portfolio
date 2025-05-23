@@ -35,7 +35,7 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #d88aff;
 
   height: 100%;
   margin: 0;
@@ -492,7 +492,7 @@ html {
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
   height: 100% !important;
 }

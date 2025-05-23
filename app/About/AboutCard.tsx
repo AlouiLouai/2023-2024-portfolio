@@ -12,6 +12,8 @@ function AboutCard() {
             from <span className="purple"> Tunisia</span>
             <br />Software engineer.
             <br />
+            Currently, I'm diving deep into the world of Artificial Intelligence, Machine Learning, and Cloud Platforms, eager to leverage these skills in innovative automation projects.
+            <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>

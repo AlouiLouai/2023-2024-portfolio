@@ -30,6 +30,15 @@ export default function Projects() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard
+                imgPath={dockerLogo}
+                isBlog={false}
+                title="Job Application Advisor"
+                description="An AI-powered tool to help users tailor their job applications by analyzing job descriptions and suggesting relevant skills and keywords. It leverages AI to provide personalized advice for cover letters and resumes."
+                link="https://github.com/AlouiLouai/job-application-advisor"
+              />
+            </Col>
+            <Col md={4} className="project-card">
+              <ProjectCard
                 imgPath={talkernLogo} // Replace with the path to your chat app logo or image
                 isBlog={false}
                 title="Chat Application"
